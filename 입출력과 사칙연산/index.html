@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백준 1001번 - A-B</title>
+</head>
+<body>
+    <textarea id="input" placeholder="두 수를 입력하세요 (공백으로 구분)"></textarea><br>
+    <button onclick="solve()">결과 보기</button>
+    <p id="result">결과가 여기에 표시됩니다.</p>
+
+    <script>
+        function solve() {
+            const input = document.getElementById('input').value.trim().split(' ');
+            const A = parseInt(input[0]);
+            const B = parseInt(input[1]);
+
+            document.getElementById('result').innerText = `결과: ${A / B}`;
+        }
+    </script>
+</body>
+</html>
